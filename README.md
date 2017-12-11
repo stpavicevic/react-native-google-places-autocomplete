@@ -1,6 +1,9 @@
 # react-native-google-places-autocomplete
 Customizable Google Places autocomplete component for iOS and Android React-Native apps
 
+### Fork
+This is a fork of the original react-native-google-places-autocomplete component. Fixing issues with keyboard not dismissing on button press (iOS) when using this component as an absolute view.
+
 ### Preview
 
 ![](https://raw.githubusercontent.com/FaridSafi/react-native-google-places-autocomplete/master/Assets/screenshot.png)
