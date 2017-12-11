@@ -694,6 +694,7 @@ export default class GooglePlacesAutocomplete extends Component {
               underlineColorAndroid={this.props.underlineColorAndroid}
               { ...userProps }
               onChangeText={this._handleChangeText}
+              blurOnSubmit={this.props.blurOnSubmit}
             />
             {this._renderRightButton()}
           </View>
@@ -742,7 +743,8 @@ GooglePlacesAutocomplete.propTypes = {
   debounce: PropTypes.number,
   isRowScrollable: PropTypes.bool,
   text: PropTypes.string,
-  textInputHide: PropTypes.bool
+  textInputHide: PropTypes.bool,
+  blurOnSubmit: PropTypes.bool
 }
 GooglePlacesAutocomplete.defaultProps = {
   placeholder: 'Search',
@@ -784,7 +786,8 @@ GooglePlacesAutocomplete.defaultProps = {
   enableEmptySections: true,
   listViewDisplayed: 'auto',
   debounce: 0,
-  textInputHide: false
+  textInputHide: false,
+  blurOnSubmit: true
 }
 
 // this function is still present in the library to be retrocompatible with version < 1.1.0
